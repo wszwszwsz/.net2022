@@ -1,2 +1,2 @@
 # Real estate rental management service
-# Author Wojciech Szypelt s14578
+# Author: Wojciech Szypelt s14578
