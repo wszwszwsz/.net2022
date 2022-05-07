@@ -531,6 +531,31 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "ApartmentRental.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ApartmentRental.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApartmentRental.Core.dll": {}
+        }
+      },
+      "ApartmentRental.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ApartmentRental.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.3",
+          "Microsoft.EntityFrameworkCore.Sqlite": "6.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ApartmentRental.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApartmentRental.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -1316,10 +1341,21 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ApartmentRental.Core/1.0.0": {
+      "type": "project",
+      "path": "../ApartmentRental.Core/ApartmentRental.Core.csproj",
+      "msbuildProject": "../ApartmentRental.Core/ApartmentRental.Core.csproj"
+    },
+    "ApartmentRental.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ApartmentRental.Infrastructure/ApartmentRental.Infrastructure.csproj",
+      "msbuildProject": "../ApartmentRental.Infrastructure/ApartmentRental.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ApartmentRental.Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.3",
@@ -1352,7 +1388,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Pliki\\dotNet2022\\Projekt\\ApartmentRental.API\\ApartmentRental.Infrastructure\\ApartmentRental.Infrastructure.csproj": {
+              "projectPath": "C:\\Pliki\\dotNet2022\\Projekt\\ApartmentRental.API\\ApartmentRental.Infrastructure\\ApartmentRental.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -52,3 +52,7 @@ C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.API\bin\Debug\ne
 C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.API\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.API\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.API\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.API\bin\Debug\net6.0\ApartmentRental.Core.dll
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.API\bin\Debug\net6.0\ApartmentRental.Infrastructure.dll
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.API\bin\Debug\net6.0\ApartmentRental.Infrastructure.pdb
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.API\bin\Debug\net6.0\ApartmentRental.Core.pdb

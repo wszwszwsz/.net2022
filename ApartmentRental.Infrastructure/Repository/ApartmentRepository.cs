@@ -14,7 +14,7 @@ public class ApartmentRepository : IApartmentRepository
         _mainContext = mainContex;
     }
 
-    public async Task<IEnumerable<Apartment>> GetAll()
+    public async Task<IEnumerable<Apartment>> GetAllAsync()
     {
         var apartments = await _mainContext.Apartment.ToListAsync();
         foreach (var apartment in apartments)
@@ -25,7 +25,7 @@ public class ApartmentRepository : IApartmentRepository
         return apartments;
     }
 
-    public async Task<Apartment> GetById(int id)
+    public async Task<Apartment> GetByIdAsync(int id)
     {
         var apartment = await _mainContext.Apartment.SingleOrDefaultAsync(x => x.Id == id);
         if (apartment != null)
@@ -37,14 +37,23 @@ public class ApartmentRepository : IApartmentRepository
         throw new EntityNotFoundException();
     }
 
-    public async Task Add(Apartment entity)
+    public async Task AddAsync(Apartment entity)
     {
-        entity.DateOfCreation = DateTime.UtcNow;
-        await _mainContext.AddAsync(entity);
-        await _mainContext.SaveChangesAsync();
+        var apartmentToAdd = await _mainContext.Apartment.SingleOrDefaultAsync(x => x.Id == entity.Id);
+        if (apartmentToAdd != null)
+        {
+            entity.DateOfCreation = DateTime.UtcNow;
+            await _mainContext.AddAsync(entity);
+            await _mainContext.SaveChangesAsync();
+        }
+        else
+        {
+            throw new EntityNotFoundException();
+        }
+        
     }
 
-    public async Task Update(Apartment entity)
+    public async Task UpdateAsync(Apartment entity)
     {
         var apartmentToUpdate = await _mainContext.Apartment.SingleOrDefaultAsync(x => x.Id == entity.Id);
 
@@ -63,7 +72,7 @@ public class ApartmentRepository : IApartmentRepository
         await _mainContext.SaveChangesAsync();
     }
 
-    public async Task DeleteById(int id)
+    public async Task DeleteByIdAsync(int id)
     {
         var apartmentToDelete = await _mainContext.Apartment.SingleOrDefaultAsync(x => x.Id == id);
         if (apartmentToDelete != null)
@@ -71,7 +80,10 @@ public class ApartmentRepository : IApartmentRepository
             _mainContext.Apartment.Remove(apartmentToDelete);
             await _mainContext.SaveChangesAsync();
         }
-
-        throw new NotImplementedException();
+        else
+        {
+            throw new NotImplementedException();
+        }
+        
     }
 }
