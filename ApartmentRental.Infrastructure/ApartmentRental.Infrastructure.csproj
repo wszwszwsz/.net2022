@@ -15,4 +15,8 @@
       <ProjectReference Include="..\ApartmentRental.Core\ApartmentRental.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Migrations" />
+    </ItemGroup>
+
 </Project>

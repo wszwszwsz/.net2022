@@ -1,0 +1,15 @@
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\bin\Debug\net6.0\ApartmentRental.Infrastructure.deps.json
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\bin\Debug\net6.0\ApartmentRental.Infrastructure.dll
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\bin\Debug\net6.0\ApartmentRental.Infrastructure.pdb
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\bin\Debug\net6.0\ApartmentRental.Core.dll
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\bin\Debug\net6.0\ApartmentRental.Core.pdb
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\ApartmentRental.Infrastructure.csproj.AssemblyReference.cache
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\ApartmentRental.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\ApartmentRental.Infrastructure.AssemblyInfoInputs.cache
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\ApartmentRental.Infrastructure.AssemblyInfo.cs
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\ApartmentRental.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\ApartmentRental.Infrastructure.csproj.CopyComplete
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\ApartmentRental.Infrastructure.dll
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\refint\ApartmentRental.Infrastructure.dll
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\ApartmentRental.Infrastructure.pdb
+C:\Pliki\dotNet2022\Projekt\ApartmentRental.API\ApartmentRental.Infrastructure\obj\Debug\net6.0\ref\ApartmentRental.Infrastructure.dll
