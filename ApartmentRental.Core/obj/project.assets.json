@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ApartmentRental.Tests/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ApartmentRental.Tests.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApartmentRental.Tests.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ApartmentRental.Tests/1.0.0": {
+      "type": "project",
+      "path": "../ApartmentRental.Tests/ApartmentRental.Tests.csproj",
+      "msbuildProject": "../ApartmentRental.Tests/ApartmentRental.Tests.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ApartmentRental.Tests >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\wszwszwsz\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Pliki\\dotNet2022\\Projekt\\ApartmentRental.API\\ApartmentRental.Tests\\ApartmentRental.Tests.csproj": {
+              "projectPath": "C:\\Pliki\\dotNet2022\\Projekt\\ApartmentRental.API\\ApartmentRental.Tests\\ApartmentRental.Tests.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

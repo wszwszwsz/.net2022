@@ -56,8 +56,11 @@ namespace ApartmentRental.Infrastructure.Repository
                 await _mainContext.Entry(addresses).Reference(x => x.Street).LoadAsync();
                 return addresses;
             }
-
-            throw new EntityNotFoundException();
+            else
+            {
+                throw new EntityNotFoundException();    
+            }
+            
         }
 
         public async Task UpdateAsync(Address entity)

@@ -439,11 +439,24 @@
       "ApartmentRental.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ApartmentRental.Tests": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ApartmentRental.Core.dll": {}
         },
         "runtime": {
           "bin/placeholder/ApartmentRental.Core.dll": {}
+        }
+      },
+      "ApartmentRental.Tests/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ApartmentRental.Tests.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApartmentRental.Tests.dll": {}
         }
       }
     }
@@ -1079,6 +1092,11 @@
       "type": "project",
       "path": "../ApartmentRental.Core/ApartmentRental.Core.csproj",
       "msbuildProject": "../ApartmentRental.Core/ApartmentRental.Core.csproj"
+    },
+    "ApartmentRental.Tests/1.0.0": {
+      "type": "project",
+      "path": "../ApartmentRental.Tests/ApartmentRental.Tests.csproj",
+      "msbuildProject": "../ApartmentRental.Tests/ApartmentRental.Tests.csproj"
     }
   },
   "projectFileDependencyGroups": {
